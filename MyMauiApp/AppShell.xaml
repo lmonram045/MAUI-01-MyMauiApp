@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Este archivo es la estructura principal de una palicación MAUI.
+    El shell de MAUI proporciona características beneficiosas para aplicaciones de varias plataformas (estilo, navegación
+    basada en URI y opciones de diseño) 
+    La plantilla predeterminada proporciona una única página (ShellContent) que se infla cuando se inicia la aplicación -->    
+<Shell
+    x:Class="MyMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MyMauiApp"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
